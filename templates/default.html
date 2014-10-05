@@ -52,7 +52,12 @@ $if(title)$
 <header>
 <h1 class="title">$title$</h1>
 $for(author)$
-<h2 class="author">$author$</h2>
+<h2 class="author">
+    <a href="$author.email$">$author.name$</a><br/>
+    <small>
+        <a href="$author.homepage$">$author.homepage$</a>
+    </small>
+</h2>
 $endfor$
 
 <h3 class="date">$VERSION$</h3>
