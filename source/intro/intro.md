@@ -4,9 +4,10 @@ author:
 	name: Johannes Wachter
 	email: johannes.wachter@students.fhv.at
 	homepage: https://github.com/wachterjohannes
+abstract: "{% include 'abstract.md' %}" 
 ---
 
-# Idea
+# Introduction
 
 The idea for this project was founded in the context of my thesis 2014/15. My intention was to create a cloud-application like ˋowncloudˋ with a modern framework ˋsymfonyˋ. This environment should help the project that be used and further developed by a community.
 
