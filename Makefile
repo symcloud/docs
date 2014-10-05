@@ -13,6 +13,7 @@ gh-pages:
 	git pull origin gh-pages
 	git pull origin master
 	cp build/index.html index.html
+	git add -A
 	git commit -am "updated index file"
 	git push origin gh-pages
 	git checkout master
