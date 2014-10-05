@@ -1,5 +1,7 @@
 # uberdoc
-build
+/build
+!/build/index.html
+!/build/index.pdf
 
 # idea
 *.iml
