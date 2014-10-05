@@ -1,1 +1,6 @@
+# uberdoc
 out
+
+# idea
+*.iml
+.idea
