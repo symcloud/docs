@@ -32,24 +32,24 @@ The second section contains the implementation of a prototype which is should co
 Topics that should be considered in the data storage: versioning, sharing, security, compression and encoding.
 
 * Content Repository
-  + Pro: Versioning, tree like structure, ...
-  + Contra: slower than other, versioning of big files and garbage collection?
+	+ Pro: Versioning, tree like structure, ...
+	+ Contra: slower than other, versioning of big files and garbage collection?
 * Git-Repository
-  + Pro: Versioning, tree like structure, compression of data 
-  + Contra: Sharing of partial repositories
+	+ Pro: Versioning, tree like structure, compression of data 
+	+ Contra: Sharing of partial repositories
 * Folder Structure
-  + Pro: Easy to handle, one to one mapping, ...
-  + Contra: Security, ...
+	+ Pro: Easy to handle, one to one mapping, ...
+	+ Contra: Security, ...
 
 ## Sync
 
 There are several ways to Synchronize data. These three sounds interesting.
 
 * webdav and ˋmirallˋ from owncloud
-  + automatic upload changed files
+	+ automatic upload changed files
 * diff sync
-  + sync only diff patch files
-  + git like interface with commit
+	+ sync only diff patch files
+	+ git like interface with commit
 * git sync
-  + use git to upload and versioning
-  + automatic commit (or manuall)
+	+ use git to upload and versioning
+	+ automatic commit (or manuall)
