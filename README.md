@@ -24,3 +24,8 @@ Updated GH-Page:
 ```sh
 make gh-pages
 ```
+
+## Read Documentation
+
+* [PDF](https://github.com/symcloud/docs/raw/master/build/index.pdf "Documentation in PDF")
+* [HTML](http://symcloud.github.io/docs "Documentation in HTML")
