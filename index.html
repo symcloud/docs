@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Symcloud doc</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="style/jqtree.css"/>
+  <link rel="stylesheet" href="style/default.css" type="text/css" />
+   <script src="style/jquery-1.10.2.min.js"></script>
+   <script src="style/tree.jquery.js"></script>
+   <script src="style/default.js"></script>
+</head>
+<body>
+<div class="nav">
+<h1>Contents</h1>
+<div class="navtools">
+  <a href="#" id="nt-all"> + </a>|<a href="#" id="nt-none"> - </a>|<a href="#" id="nt-l1"> 1 </a>|<a href="#" id="nt-l2"> 2 </a>|<a href="#" id="nt-l3"> 3 </a>
+</div>
+<div class="navtree"></div>
+</div>
+<header>
+<h1 class="title">Symcloud doc</h1>
+<h2 class="author">
+    <a href="johannes.wachter@students.fhv.at">Johannes Wachter</a><br/>
+    <small>
+        <a href="https://github.com/wachterjohannes">https://github.com/wachterjohannes</a>
+    </small>
+</h2>
+
+<h3 class="date">2014-10-05 (388301f)</h3>
+
+<h2>Abstract:</h2>
+<div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>The idea for this project was founded in the context of my thesis 2014/15. My intention was to create a cloud-application like ˋowncloudˋ with a modern framework ˋsymfonyˋ. This environment should help the project that be used and further developed by a community.</p>
+<p>I have traced the owncloud project since the first release and like the software a lot. With my work on the open source CMF ˋSuluˋ I have noticed the power of a big community. Because of these two reasons, I have decided to combine them in my master thesis.</p>
+<h2 id="struture-of-work">Struture of Work</h2>
+<p>Master Thesis will be written in german, because it costs me a lot of time to write a lot of text in a proper english. But for the community i will write the documentation in this repository in english. The important Sections of the thesis i will translate in english for the documentation.</p>
+<p>The work is seperated in two big sections. One is a Concept section which describs important System parts like: UI, Rest API, Data Storage and Syncronization of data.</p>
+<p>The second section contains the implementation of a prototype which is should contain:</p>
+<ul>
+<li>UI concept implementation</li>
+<li>Rest API for Files and User (and all the other necessary APIs to implement ui)</li>
+<li>Data Storage abstraction</li>
+<li>Implementation of one or more (perhaps for comparison) implementations of the abstraction</li>
+<li>Prototype software to synchronize data (or use mirall from owncloud with a webdav interface of the api)</li>
+</ul>
+<h2 id="data-storage">Data Storage</h2>
+<p>Topics that should be considered in the data storage: versioning, sharing, security, compression and encoding.</p>
+<ul>
+<li>Content Repository
+<ul>
+<li>Pro: Versioning, tree like structure, ...</li>
+<li>Contra: slower than other, versioning of big files and garbage collection?</li>
+</ul></li>
+<li>Git-Repository
+<ul>
+<li>Pro: Versioning, tree like structure, compression of data</li>
+<li>Contra: Sharing of partial repositories</li>
+</ul></li>
+<li>Folder Structure
+<ul>
+<li>Pro: Easy to handle, one to one mapping, ...</li>
+<li>Contra: Security, ...</li>
+</ul></li>
+</ul>
+<h2 id="sync">Sync</h2>
+<p>There are several ways to Synchronize data. These three sounds interesting.</p>
+<ul>
+<li>webdav and ˋmirallˋ from owncloud
+<ul>
+<li>automatic upload changed files</li>
+</ul></li>
+<li>diff sync
+<ul>
+<li>sync only diff patch files</li>
+<li>git like interface with commit</li>
+</ul></li>
+<li>git sync
+<ul>
+<li>use git to upload and versioning</li>
+<li>automatic commit (or manuall)</li>
+</ul></li>
+</ul>
+</body>
+</html>
